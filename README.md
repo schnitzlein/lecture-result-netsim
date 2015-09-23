@@ -20,7 +20,27 @@ This is a prototype version of ipv6 packet capturing.
 
 _____________________________________________________________________________________
 
-where to put the code: inet/src/util/headerserialzier/ipv6
+HOWTo:
+
+where to put the code, the directory ipv6: inet/src/util/headerserialzier/ipv6
+
+add this piece of code in PcapRecorder.cc 
+...
+#ifdef WITH_IPv6
+#include "IPv6Datagram.h"
+#include <ICMPv6.h> //added
+#endif
+...
+
+add this piece of code @ipv6 exmaple, in a .ned file or add graphically PcapRecorder
+...
+pcapRecorder: PcapRecorder {
+            @display("p=31,275");
+        }
+...
+
+Run the example network,
+check the result directory and you have a pcap file, hopefully
 _____________________________________________________________________________________
 
 absolutley no warranty! no test on newer INET version. maybe ... if time ...

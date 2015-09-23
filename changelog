@@ -1,3 +1,7 @@
+#23.09.2015
++ added code to github
+- no test with actual INET Version
+- where to put the code: inet/src/util/headerserialzier/ipv6
 
 #26.02.2015
 + in src/util/headerserializier/ipv6/headers/ip6.h die #define ip6_vfc  .... put in correct place struct ip6_hdr ...

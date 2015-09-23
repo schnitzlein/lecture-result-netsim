@@ -1,0 +1,33 @@
+
+#26.02.2015
++ in src/util/headerserializier/ipv6/headers/ip6.h die #define ip6_vfc  .... put in correct place struct ip6_hdr ...
++ added: struct ip6_hdr *ip6h = NULL; in case of buf is NULL whole omnet with break
+
+#24.01.2015
++ IPv6Serializer den parser hinzugefügt und getestet
++ Pcap arbeitet jetzt mit ipv6 Paketen
+- checksum Berechnung für ipv6 Pakte noch fehlerhaft/unvollständig
+- headerextension, options fehlen noch
+- einige icmpv6 codes noch nicht implementiert
++plans for future presentation and implement missing things
+
+# 21.01.2015
+- entdeckt das noch icmpv4 kram in ICMPv6Serializer drin ist
+- weitere aenderungen und anpassung an ipv6 nötig
+
+# 20.01.2015
++ work on icmpv6 creating header file
++ hope this will be the last missing link for ipv6 packet capturing
+
+# 06.01.2015
++ tested IPv4 pcapRecorder and check functionality in seperate file
+
+# started work 2015
+checked serialzie icmp from ipv4 and from some book information changes for ipv6
+in ipv6 reoganized setCode() and getCode() in ipv6serialzer -> different messages
+header angepasst bspw.: #include "headers/ip6.h"
+reading about ICMP zu ICMPv6...
+reading ...
+read stuff ...
+test stuff ...
+read stuff

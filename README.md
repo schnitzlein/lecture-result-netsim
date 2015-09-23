@@ -17,3 +17,12 @@ There are some new files in inet/src/util/headerserialzier/ipv6
 
 There are issues in the files and checksum calculation until now not fixed!
 This is a prototype version of ipv6 packet capturing.
+
+_____________________________________________________________________________________
+
+where to put the code: inet/src/util/headerserialzier/ipv6
+_____________________________________________________________________________________
+
+absolutley no warranty! no test on newer INET version. maybe ... if time ...
+
+
